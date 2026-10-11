@@ -31,7 +31,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "node ../../scripts/clean-dist.mjs && tsc -p tsconfig.build.json",
+    "build": "node ../../scripts/clean-dist.mjs && tsc -p tsconfig.build.json && node ../../scripts/mark-executable.mjs dist/cli.js",
     "prepack": "pnpm build",
     "typecheck": "tsc --noEmit"
   },
